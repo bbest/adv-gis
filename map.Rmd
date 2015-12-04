@@ -83,3 +83,8 @@ leaflet() %>%
   addRasterImage(r, colors=pal, project=F, opacity=0.7) %>%
   addLegend(pal=pal, values=values(r), title='Habitats')
 ```
+
+
+## Embed GeoJSON Map from Github
+
+<script src="https://embed.github.com/view/geojson/bbest/adv-gis/gh-pages/data/cart_paths.geojson"></script>
