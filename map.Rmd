@@ -50,7 +50,8 @@ leaflet() %>%
 # create map with Stamen.Watercolor basemap
 leaflet() %>%  
   addProviderTiles('Stamen.Watercolor') %>%
-  addMarkers(data = pts_gcs, popup=~sprintf('id: %d', id))
+  addMarkers(data = pts_gcs, popup=~sprintf('id: %d', id)) %>%
+  setView(lng=mean(pts_gcs@bbox[1,]), lat=mean(pts_gcs@bbox[2,]), zoom=16)
 ```
 
 ### Add Lines and Polygons
