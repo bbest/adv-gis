@@ -2,7 +2,13 @@
 title: "maps"
 author: "Ben Best"
 date: "December 2, 2015"
-output: html_document
+output:
+  html_document:
+    fig_caption: no
+    number_sections: yes
+    self_contained: yes
+    toc: yes
+    toc_depth: 4
 ---
 
 ## Create Map of Points
